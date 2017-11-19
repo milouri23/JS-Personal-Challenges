@@ -9,6 +9,18 @@ function netIPcalc(hostIP, netmask) {
 
     return netIP.join(".");
 }
-const hostIP = "172.16.10.4";
-const netmask = "255.255.0.0";
-console.log( netIPcalc(hostIP, netmask) );
+
+function largestPowerOf2(number) {
+    let power = -1;
+    while ( (number >> ++power ) !== 1);
+    /* Equivalent to:
+    while( Math.floor( number / Math.pow( 2, ++power ) ) !== 1 );
+    */
+    return power;
+}
+
+console.log(largestPowerOf2(67));
+
+// const hostIP = "172.16.10.4";
+// const netmask = "255.255.0.0";
+// console.log( netIPcalc(hostIP, netmask) );
