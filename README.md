@@ -21,3 +21,8 @@ _input_
 _output_
 
 "192.168.20.0" -> Network IP
+
+### 2. Largest power of 2 less than or equal to integer
+Create a function that:
+* Receives an integer as parameter
+* Returns the largest power of 2 less than or equal to that integer
